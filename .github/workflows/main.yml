@@ -1,0 +1,23 @@
+name: notification-system
+
+on:
+  push:
+    branches:
+      - main
+jobs:
+  buld-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout to repository
+        uses: actions/checkout@v2
+      - name: install and build
+        run: npm ci
+      - name: publish to registry
+        uses: actions/setup-node@v2
+        with:
+          node-version: 16
+          registry-url: 'https://npm.pkg.github.com'
+          scope: '@raezon'
+      - run: npm publish
+        env:
+          NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
