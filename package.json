@@ -1,10 +1,10 @@
 {
-  "name": "@krish/nest-notification",
+  "name": "@raezon/first_nest_package",
   "version": "1.0.0",
-  "description": "Notification system",
+  "description": "Starter project for NestJS NPM packages",
   "main": "dist/index.js",
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com/npm"
+    "registry": "https://npm.pkg.github.com/@raezon"
   },
   "files": [
     "dist"
@@ -18,11 +18,11 @@
     "nestjs",
     "nest-packages"
   ],
-  "author": "Ammar Djebabla",
+  "author": "Djebabla ammar",
   "license": "ISC",
   "dependencies": {
     "@nestjs/common": "^8.4.0",
-    "@nestjs/mapped-types": "*",
+    "@nestjs/mapped-types": "^2.0.2",
     "reflect-metadata": "^0.1.13",
     "rxjs": "^7.5.5"
   },
