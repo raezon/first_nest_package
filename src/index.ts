@@ -1,3 +1,1 @@
-import { TestModule } from './test/test.module'; 
-
-export { TestModule }; 
+export * from './test/test.module';
