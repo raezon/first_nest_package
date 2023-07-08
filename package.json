@@ -4,7 +4,7 @@
   "description": "Notification system",
   "main": "dist/index.js",
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com/@raezon"
+    "registry": "https://npm.pkg.github.com/npm"
   },
   "files": [
     "dist"

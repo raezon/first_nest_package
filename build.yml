@@ -11,7 +11,7 @@ jobs:
       - name: checkout to repository
         uses: actions/checkout@v2
       - name: install and build
-        run: npm ci
+        run: npm ci --save-dev typescript
       - name: publish to registry
         uses: actions/setup-node@v2
         with:
