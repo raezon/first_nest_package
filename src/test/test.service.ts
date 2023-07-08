@@ -5,22 +5,22 @@ import { UpdateTestDto } from './dto/update-test.dto';
 @Injectable()
 export class TestService {
   create(createTestDto: CreateTestDto) {
-    return 'This action adds a new test';
+    return 'Create a new sayen';
   }
 
   findAll() {
-    return `This action returns all test`;
+    return `All sayans`;
   }
 
   findOne(id: number) {
-    return `This action returns a #${id} test`;
+    return `This is a sayen number #${id} `;
   }
 
   update(id: number, updateTestDto: UpdateTestDto) {
-    return `This action updates a #${id} test`;
+    return `Modify sayn number  #${id} `;
   }
 
   remove(id: number) {
-    return `This action removes a #${id} test`;
+    return `Remove sayn number  #${id} `;
   }
 }
