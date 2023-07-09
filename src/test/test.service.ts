@@ -1,10 +1,8 @@
 import { Injectable } from '@nestjs/common';
-import { CreateTestDto } from './dto/create-test.dto';
-import { UpdateTestDto } from './dto/update-test.dto';
 
 @Injectable()
 export class TestService {
-  create(createTestDto: CreateTestDto) {
+  create(createTestDto) {
     return 'Create a new sayen';
   }
 
@@ -16,7 +14,7 @@ export class TestService {
     return `This is a sayen number #${id} `;
   }
 
-  update(id: number, updateTestDto: UpdateTestDto) {
+  update(id: number, updateTestDto) {
     return `Modify sayn number  #${id} `;
   }
 

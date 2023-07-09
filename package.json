@@ -1,8 +1,8 @@
 {
   "name": "@raezon/first_nest_package",
-  "version": "1.0.9",
+  "version": "1.0.11",
   "description": "Starter project for NestJS NPM packages",
-  "main": "dist/index.js",
+  "main": "dist/test/index.js",
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/@raezon"
   },
