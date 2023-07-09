@@ -7,7 +7,7 @@ export class TestService {
   }
 
   findAll() {
-    return `All sayans`;
+    return `All pokemons`;
   }
 
   findOne(id: number) {
