@@ -2,8 +2,54 @@
 
 Welcome to the repository for our first Node module published as an npm package! This project is aimed at providing a template 
 to publish a nest js module to npm.github
+## Publishing your own package
+1. Modify package.json
+replace the dollar variable by your own information
 
-## Installation
+```
+{
+  "name": "@$github_username/$name_of_package_you_want",
+  "version": "1.1.3",
+  "description": "Starter project for NestJS NPM packages",
+  "main": "dist/test/index.js",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/@github_username"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "rimraf dist && tsc",
+    "prepublish": "npm run build"
+  },
+  "keywords": [
+    "npm",
+    "nestjs",
+    "nest-packages"
+  ],
+  "author": "XXX XXXX",
+  "license": "ISC",
+  "dependencies": {
+    "@nestjs/common": "^8.4.0",
+    "@nestjs/mapped-types": "^2.0.2",
+    "reflect-metadata": "^0.1.13",
+    "rxjs": "^7.5.5"
+  },
+  "devDependencies": {
+    "@types/node": "^18.16.3",
+    "rimraf": "^5.0.0",
+    "typescript": "^4.9.5"
+  }
+}
+
+```
+Note
+```
+dist/test/index.js
+if you are inside src you did change
+the name of the module from test to another thing please change it also
+```
+## Installation on a project
 
 To install the package, you need to have Node.js and npm (Node Package Manager) installed on your machine.
 
@@ -16,7 +62,7 @@ To install the package, you need to have Node.js and npm (Node Package Manager) 
 ```
 2. Install the package using npm:
 
-```shell
+``` shell
 npm install @raezon/first_nest_package
 ```
 3 Usage
