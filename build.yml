@@ -1,4 +1,4 @@
-name: notification-system
+name: firest_nest_package
 
 on:
   push:
