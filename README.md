@@ -1,6 +1,7 @@
-# First Node Module - npm Package
+# Publish Nest js module on npm.github
 
-Welcome to the repository for our first Node module published as an npm package! This project is aimed at providing a reusable and modular solution for common tasks in Node.js development.
+Welcome to the repository for our first Node module published as an npm package! This project is aimed at providing a template 
+to publish a nest js module to npm.github
 
 ## Installation
 
@@ -59,3 +60,5 @@ Let's embark on this exciting journey of creating and sharing powerful Node.js m
 
 Note: Make sure to replace the placeholder token (xxx) in the .npmrc file with your actual GitHub access token,
 you can generate that token go to settings/Developer Settings/Personal Access Token/Token(classic)
+
+🚀 Happy coding! 🎉
