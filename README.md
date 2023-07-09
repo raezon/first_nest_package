@@ -1,6 +1,6 @@
 # Publish Nest js module on npm.github
 
-Welcome to the repository for our first Node module published as an npm package! This project is aimed at providing a template 
+first Node module published as an npm package! This project is aimed at providing a template 
 to publish a nest js module to npm.github
 ## Publishing your own package
 1. Modify package.json
